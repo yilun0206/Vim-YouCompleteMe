@@ -1,4 +1,4 @@
-"""" global variables """"
+"""" Wlobal variables """"
 " for 256 colors terminal such as 'xterm-256color' and 'screen-256color'
 if $TERM =~ '256color'
     set t_Co=256
@@ -28,7 +28,7 @@ set smartcase
 set autoread
 set updatetime=100
 set noshowmode
-set splitright
+" set splitright
 " set colorcolumn=120
 let loaded_matchparen = 1
 let mapleader = ","
@@ -221,7 +221,7 @@ set laststatus=2  "always show status bar
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 
 " adaptive color
 if g:colors_name == 'primary'
@@ -309,3 +309,14 @@ let g:UltiSnipsEditSplit="vertical"
 inoremap <silent><expr> <c-b> complete_parameter#pre_complete("()")
 " let g:complete_parameter_use_ultisnips_mappings = 0
 let g:complete_parameter_echo_signature = 0
+
+" important old config
+"
+
+let Tlist_Exit_OnlyWindow=1
+let Tlist_Use_Right_Window=1
+let Tlist_WinWidth = 40
+map <silent>tb :TlistToggle<cr>
+
+set tabstop=8
+set mouse=a
